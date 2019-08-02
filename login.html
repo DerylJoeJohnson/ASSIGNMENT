@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LIBRARY</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/0e696efa1c.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/body_reg.css">
+    <script src="./login.js"></script>
+
+
+</head>
+<body>
+        <section class="container-fluid">
+                <header class="header">
+                        <nav class="navbar navbar-expand-lg navbar-dark nav-custom">
+                                <a class="navbar-brand" href=""></a>
+                                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                                        <span class="navbar-toggler-icon"></span>
+                                    </button>
+                                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                                    <ul class="navbar-nav mr-auto">
+                                        <li class="nav-item">
+                                            <a href="Library.html" class="nav-link">Login</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="register.html" class="nav-link">Registration</a>
+                                        </li>
+                                        <li class="nav-item">
+                                                <a href="book1.html" class="nav-link">List of Books</a>
+                                            </li>
+                                    </ul>                    
+            </nav>
+            </header>
+            </section>
+            <div class="container-fluid">
+                    <section class="custom-header">
+                        <h1>Library</h1>
+                        <div class="jumbotron custom-jumbo">
+            
+                            </div>
+                        
+                    </section>
+                </div>  
+                <!-- Main Area -->
+    <section class="container">
+            <section class="custom-container-index">
+                <div class="custom-section-body">
+                    <h2>LOGIN</h2>
+                    <div>
+                        <form id="form1">
+                            <div class="form-group">
+                                <!-- user name / Email -->
+                                <label class="form-text">Email</label>
+                                <input type="text" class="form-control " id="email" onblur="validateLogEmail()" placeholder="Email" required>
+                                <label class="validateLabel" id="reqLogEmail"></label>
+                                <br>
+                                <!-- password -->
+                                <label class="form-text">Password</label>
+                                <input type="password" class="form-control" id="password" onblur="validateLogPassword()" placeholder="Password" required>
+                                <label class="validateLabel" id="reqLogPasswd"></label>
+                                <br>
+                                <!-- button -->
+                                <input type="button" value="LOGIN" class="btn btn-success" onclick="validateUser()">
+                                <!-- Reg Here -->
+                                <label class="reg_text"><a href="register.html">Click Here</a> For Register</label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </section>
+     <!-- Main Area Ends Here -->
+      
+</body>
+</html>
