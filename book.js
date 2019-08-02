@@ -17,10 +17,10 @@ $(document).ready(function(){
 
                    
                     if(genre==x){
-                        output+="<div class='col col-sm-4 col-4 d-flex align-items-stretch'><div class='card'> <img src='"+img+"'width='200px'height='150px'class='card-img-top'><div class='card-body'Book Name :>"+name+"<br>Author :"+author+"<br>Genre :"+genre+"<br>Description :"+description+"<br>Price :"+price+"<br></div></div><br><br></div><br><br>";  
+                        output+="<div class='col col-sm-4 col-4 d-flex align-items-stretch'><div class='card'> <img src='"+img+"'width='200px'height='150px'class='card-img-top'><div class='card-body'>Book Name : "+name+"<br>Author : "+author+"<br>Genre : "+genre+"<br>Description : "+description+"<br>Price : "+price+"<br></div></div><br><br></div><br><br>";  
                     }
                     if(x=="select"){ 
-                        output+="<div class='col col-sm-4 col-4 d-flex align-items-stretch'><div class='card'> <img src='"+img+"'width='200px'height='150px'class='card-img-top'><div class='card-body'Book Name :>"+name+"<br>Author :"+author+"<br>Genre :"+genre+"<br>Description :"+description+"<br>Price :"+price+"<br></div></div><br><br></div><br><br>";
+                        output+="<div class='col col-sm-4 col-4 d-flex align-items-stretch'><div class='card'> <img src='"+img+"'width='200px'height='150px'class='card-img-top'><div class='card-body'>Book Name : "+name+"<br>Author : "+author+"<br>Genre : "+genre+"<br>Description : "+description+"<br>Price : "+price+"<br></div></div><br><br></div><br><br>";
                     }
                    
                     console.log(x);
